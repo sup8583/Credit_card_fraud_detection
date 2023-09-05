@@ -1,0 +1,40 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="distance_from_last_transaction">distance_from_last_transaction:</label>
+        <input type="text" id="distance_from_last_transaction" name="distance_from_last_transaction" placeholder="Enter distance from last transaction value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="ratio_to_median_purchase_price">ratio_to_median_purchase_price:</label>
+        <input type="text" id="ratio_to_median_purchase_price" name="ratio_to_median_purchase_price" placeholder="Enter ratio to median purchase price value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="repeat_retailer">repeat_retailer:</label>
+        <input type="text" id="repeat_retailer" name="table" placeholder="Enter repeat retailer value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="used_chip">used_chip:</label>
+        <input type="text" id="used_chip" name="used_chip" placeholder="Enter used chip value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="used_pin_number">used_pin_number:</label>
+        <input type="text" id="used_pin_number" name="used_pin_number" placeholder="Enter used pin number value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="online_order">online_order:</label>
+        <input type="text" id="online_order" name="online_order" placeholder="Enter online order value (float)">
+    </div>         
+  
+
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
